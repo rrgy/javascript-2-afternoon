@@ -18,7 +18,7 @@ let me = {
   name: 'Ryan',
   age: 27
 }
-me.name 
+me.name
 
 ////////// PROBLEM 2 //////////
 
@@ -41,8 +41,8 @@ let favoriteThings = {
   and then another key named 'brand' with the value being your favorite brand.
 */
 
-favoriteThings.car='jeep'
-favoriteThings.brand='coca-cola'
+favoriteThings.car = 'jeep'
+favoriteThings.brand = 'coca-cola'
 
 
 /*
@@ -66,7 +66,7 @@ favoriteThings.book = 'Harry Potter'
 
 let backPack = {}
 let item = 'firstPocket'
-backPack[item]='chapstick'
+backPack[item] = 'chapstick'
 backPack.color = 'orange'
 
 /*
@@ -115,6 +115,7 @@ user2.email = 'bryan.smith@devmounta.in'
 */
 
 //Code Here
+let methodCollection = {}
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
@@ -122,12 +123,17 @@ user2.email = 'bryan.smith@devmounta.in'
 */
 
 //Code Here
+methodCollection.alertHello = function () { alert('hello') }
+methodCollection.logHello = function () { console.log('hello') }
 
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
+function alertHello() {
+
+}
 
 ////////// PROBLEM 6 //////////
 
@@ -137,6 +143,9 @@ user2.email = 'bryan.smith@devmounta.in'
 */
 
 //Code Here
+function makePerson(name, birthday, ssn) {
+  return { name, birthday, ssn }
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -146,3 +155,6 @@ user2.email = 'bryan.smith@devmounta.in'
 */
 
 //Code Here
+function makeCard(cardNumber, expirationDate, securityCode) {
+  return { cardNumber, expirationDate, securityCode }
+}
